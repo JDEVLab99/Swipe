@@ -1,0 +1,20 @@
+public void ris()
+        {
+            int i = 0;
+            int j = 0;
+
+            if (parola_inserire == "" || parola_inserire.ElementAt(0) == 'j' || parola_inserire.ElementAt(0) == 'k' || parola_inserire.ElementAt(0) == 'y')
+                set_all("NOT FOUND");
+
+            do
+            {
+                if (parola_inserire.Length == parole[i].Length || parola_inserire.Length+1==parole.ElementAt(i).Length )
+                { 
+                   risultati[j] = parole[i];
+                   j++;
+                }
+                i++;
+
+            } while (i < parole.Length && j!=3);
+
+        }
